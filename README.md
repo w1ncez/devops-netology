@@ -1,8 +1,14 @@
-# devops-netology
-Hello World!
-
-в файле .gitignore будут игнорироваться:
-*.sh - файлы скриптов shell
-*.git - файлы с расширением git
-ignore/ - все файлы в папке 'ignore'
-
+В файле terraform/.gitignore будут игнорироваться следующие элементы:
+- .terraform/ - все элементы в директории .terraform/
+- *.tfstate - все файлы с расширением '.tfstate'
+- *.tfstate.* - все файлы, содержащие в имени '.tfstate', с любым расширением.
+- crash.log - файл 'crash.log'
+- crash.*.log - все файлы, содержащие любые значения после 'crash.' в имени, с расширенимем '.log'
+- *.tfvars - все файлы с расширением 'tfvars'
+- *.tfvars.json - все файлы, имеющие в имени любые значения перед '.tfvars' и расширением '.json' 
+- override.tf - файл 'override.tf'
+- override.tf.json - файл 'override.tf.json'
+- *_override.tf - все файлы, имеющие в имени любые значения перед '_override.tf'
+- *_override.tf.json - все файлы, имеющие в имени любые значения перед '_override.tf' и расширением '.json'
+- .terraformrc - файл '.terraformrc'
+- terraform.rc - файл 'terraform.rc'
